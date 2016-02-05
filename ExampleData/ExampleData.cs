@@ -70,6 +70,9 @@ namespace Poly2Tri {
 		public static Polygon Two         { get { return CacheLoadDat(@"Data/2.dat"); } }
 		public static Polygon Bird        { get { return CacheLoadDat(@"Data/bird.dat",false,true); } }
 		public static Polygon Custom      { get { return CacheLoadDat(@"Data/custom.dat"); } }
+		public static Polygon Æ { get { return CacheLoadDat(@"Data/ae.dat"); } }
+		public static Polygon Ü       { get { return CacheLoadDat(@"Data/ü.dat"); } }
+		public static Polygon U       { get { return CacheLoadDat(@"Data/u.dat"); } }
 		public static Polygon Debug       { get { return CacheLoadDat(@"Data/debug.dat"); } }
 		public static Polygon Debug2      { get { return CacheLoadDat(@"Data/debug2.dat"); } }
 		public static Polygon Diamond     { get { return CacheLoadDat(@"Data/diamond.dat"); } }
@@ -102,7 +105,7 @@ namespace Poly2Tri {
 		public static Polygon Tank        { get { return CacheLoadDat(@"Data/tank.dat"); } }
 		public static Polygon Test        { get { return CacheLoadDat(@"Data/test.dat"); } }
 
-		public static IEnumerable<Polygon> Polygons { get { return new[] { Two, Bird, Custom, Debug, Debug2, Diamond, Dude, Funny, NazcaHeron, NazcaMonkey, Sketchup, Star, Strange, Tank, Test }; }}
+		public static IEnumerable<Polygon> Polygons { get { return new[] { Two, Bird, Æ, Ü, U, Custom, Debug, Debug2, Diamond, Dude, Funny, NazcaHeron, NazcaMonkey, Sketchup, Star, Strange, Tank, Test }; }}
 
 		public static Image Logo256x256 { get { return CacheLoadImage(@"Textures/poly2tri_logotype_256x256.png"); } }
 	}
